@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de E-mail com Estilo - HeyTools</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/email.css">
+</head>
+<body class="theme-dark">
+    <aside class="sidebar">
+        <h1 class="logo">HeyTools</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cpf.html">Gerador de CPF</a></li>
+                <li><a href="email.html">Gerador de E-mail</a></li>
+                <li><a href="regra.html">Regra de 3</a></li>
+                <li><a href="pdf.html">Conversor de PDF</a></li>
+                <li><a href="mp3.html">Baixar MP3</a></li>
+                <li><a href="video.html">Baixar Vídeo</a></li>
+            </ul>
+        </nav>
+        <div class="controls">
+            <button onclick="toggleTheme()">🌗 Tema</button>
+        </div>
+    </aside>
+
+    <header class="top-bar">
+        <div class="top-links">
+            <a href="login.html">Login</a>
+            <a href="register.html">Registrar</a>
+            <a href="donate.html">Doar</a>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="tab active" id="email-generator">
+            <h2>Gerador de E-mail com Estilo</h2>
+            <div class="generator-container">
+                <div class="input-group">
+                    <label for="estiloEmail">Estilo do E-mail:</label>
+                    <select id="estiloEmail">
+                        <option value="aleatorio">Aleatório</option>
+                        <option value="formal">Formal</option>
+                        <option value="informal">Informal</option>
+                        <option value="nome">Nome</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="dominioEmail">Domínio:</label>
+                    <select id="dominioEmail">
+                        <option value="gmail.com">gmail.com</option>
+                        <option value="hotmail.com">hotmail.com</option>
+                        <option value="outlook.com">outlook.com</option>
+                        <option value="yahoo.com.br">yahoo.com.br</option>
+                        <option value="aol.com">aol.com</option>
+                        <option value="aleatorio">Aleatório</option>
+                    </select>
+                </div>
+                <button onclick="gerarEmailComEstilo()">Gerar E-mail</button>
+                <div class="result-box">
+                    <label for="emailResultado">E-mail Gerado:</label>
+                    <input type="text" id="emailResultado" value="" readonly>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HeyTools. Todos os direitos reservados.</p>
+        <div class="social">
+            <a href="#">Instagram</a>
+            <a href="#">GitHub</a>
+            <a href="#">Contato</a>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+    <script src="assets/email.js"></script>
+</body>
+</html>

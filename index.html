@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeyTools</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="theme-dark sidebar-open">
+    <aside class="sidebar">
+        <h1 class="logo">HeyTools</h1>
+        <nav>
+            <a href="index.html">
+                <i class="fas fa-bars menu-icon"></i>
+                Início
+            </a>
+            <a href="cpf.html">
+                <i class="fas fa-bars menu-icon"></i>
+                Gerador de CPF
+            </a>
+            <a href="email.html">
+                <i class="fas fa-bars menu-icon"></i>
+                Gerador de E-mail
+            </a>
+            <a href="regra.html">
+                <i class="fas fa-bars menu-icon"></i>
+                Regra de 3
+            </a>
+            <a href="pdf.html">
+                <i class="fas fa-bars menu-icon"></i>
+                Conversor de PDF
+            </a>
+            <a href="mp3.html">
+                <i class="fas fa-bars menu-icon"></i>
+                Baixar MP3
+            </a>
+            <a href="video.html">
+                <i class="fas fa-bars menu-icon"></i>
+                Baixar Vídeo
+            </a>
+        </nav>
+        <div class="controls">
+            <button onclick="toggleTheme()">Tema</button>
+        </div>
+    </aside>
+
+    <header class="top-bar">
+        <div class="top-links">
+            <a href="login.html">Login</a>
+            <a href="register.html">Registrar</a>
+            <a href="donate.html">Doar</a>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="tab active" id="home">
+            <h2>Bem-vindo ao HeyTools</h2>
+            <div class="card-grid">
+                <div class="card"><a href="cpf.html">Gerador de CPF</a></div>
+                <div class="card"><a href="email.html">Gerador de E-mail</a></div>
+                <div class="card"><a href="regra.html">Regra de 3</a></div>
+                <div class="card"><a href="pdf.html">Conversor de PDF</a></div>
+                <div class="card"><a href="mp3.html">Baixar MP3</a></div>
+                <div class="card"><a href="video.html">Baixar Vídeo</a></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HeyTools. Todos os direitos reservados.</p>
+        <div class="social">
+            <a href="#">Instagram</a>
+            <a href="#">GitHub</a>
+            <a href="Contato">Contato</a>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
