@@ -1,0 +1,77 @@
+/* assets/email.css */
+.generator-container {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.input-group label {
+    color: white;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input[type="text"],
+.input-group select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.generator-container button {
+    background: var(--highlight);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.generator-container button:hover {
+    background-color: #19874b;
+}
+
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-box label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.result-box input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}

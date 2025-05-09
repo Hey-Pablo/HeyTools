@@ -1,0 +1,95 @@
+/* assets/cpf.css */
+.generator-container {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.options label {
+    margin-right: 10px;
+}
+
+.generator-container button {
+    background: var(--highlight);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.generator-container button:hover {
+    background-color: #19874b;
+}
+
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Para posicionar a mensagem de copiado */
+}
+
+.result-box label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.result-box input[type="text"] {
+    width: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.result-box button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.result-box button:hover {
+    background-color: #777;
+}
+
+.copied-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 10;
+}

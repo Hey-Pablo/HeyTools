@@ -1,44 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HeyTools</title>
-    <link rel="stylesheet" href="assets/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
-<body class="theme-dark sidebar-open">
-    <aside class="sidebar">
-        <h1 class="logo">HeyTools</h1>
+<body class="theme-dark">
+    <aside class="sidebar collapsed" id="sidebar">
+        <button class="toggle-btn" id="toggleSidebar">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <h1 class="logo">Hey</h1>
         <nav>
-            <a href="index.html">
-                <i class="fas fa-bars menu-icon"></i>
-                Início
-            </a>
-            <a href="cpf.html">
-                <i class="fas fa-bars menu-icon"></i>
-                Gerador de CPF
-            </a>
-            <a href="email.html">
-                <i class="fas fa-bars menu-icon"></i>
-                Gerador de E-mail
-            </a>
-            <a href="regra.html">
-                <i class="fas fa-bars menu-icon"></i>
-                Regra de 3
-            </a>
-            <a href="pdf.html">
-                <i class="fas fa-bars menu-icon"></i>
-                Conversor de PDF
-            </a>
-            <a href="mp3.html">
-                <i class="fas fa-bars menu-icon"></i>
-                Baixar MP3
-            </a>
-            <a href="video.html">
-                <i class="fas fa-bars menu-icon"></i>
-                Baixar Vídeo
-            </a>
+            <a href="index.html"><i class="fas fa-home menu-icon"></i> <span class="text">Início</span></a>
+            <a href="cpf.html"><i class="fas fa-id-card menu-icon"></i> <span class="text">Gerador de CPF</span></a>
+            <a href="email.html"><i class="fas fa-envelope menu-icon"></i> <span class="text">Gerador de E-mail</span></a>
+            <a href="regra.html"><i class="fas fa-percent menu-icon"></i> <span class="text">Regra de 3</span></a>
+            <a href="pdf.html"><i class="fas fa-file-pdf menu-icon"></i> <span class="text">Conversor de PDF</span></a>
+            <a href="mp3.html"><i class="fas fa-music menu-icon"></i> <span class="text">Baixar MP3</span></a>
+            <a href="video.html"><i class="fas fa-video menu-icon"></i> <span class="text">Baixar Vídeo</span></a>
         </nav>
         <div class="controls">
             <button onclick="toggleTheme()">Tema</button>
@@ -72,7 +54,7 @@
         <div class="social">
             <a href="#">Instagram</a>
             <a href="#">GitHub</a>
-            <a href="Contato">Contato</a>
+            <a href="#">Contato</a>
         </div>
     </footer>
 
